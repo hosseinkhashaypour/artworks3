@@ -1,0 +1,262 @@
+:root {
+    --color1: #1D1A39;
+    --color2: #451952;
+    --color3: #662549;
+    --color4: #AE445A;
+    --color5: #F39F5A;
+    --color6: #E8BCB9;
+}
+
+@font-face {
+    font-family: lale;
+    src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: bahman;
+    src: url(Bahman\ 1.ttf);
+}
+
+@font-face {
+    font-family: irs;
+    src: url(IRANSansWeb_Bold.ttf);
+}
+
+@font-face {
+    font-family: aviny;
+    src: url(aviny.ttf);
+}
+
+body {
+    background: linear-gradient(90deg, #1D1A39, #451952);
+}
+
+* {
+    font-family: irs;
+}
+
+/* mobile first design  */
+@media (min-width:300px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #ui {
+        margin-top: -7px;
+    }
+
+    #painter {
+        width: 200px;
+        position: relative;
+    }
+
+    #painter .painter {
+        width: 100%;
+        border-radius: 18%;
+        margin-left: 83px;
+        border: 3px solid;
+        animation: spin 5s linear infinite;
+
+    }
+
+    /* #painter::after{
+        content: "";
+        position: absolute;
+        inset: -25px;
+        border: 10px solid white;
+        border-radius: 33%;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        animation: spin 3.5s linear infinite;
+        margin-left: 83px;
+    } */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--color3);
+        width: 442px;
+        margin-left: -20px;
+        border-radius: 60px;
+    }
+
+    li {
+        float: left;
+        text-align: center;
+        margin-left: 41px;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: gray;
+        opacity: 0.5;
+    }
+
+    .hrefc {
+        color: var(--color5);
+    }
+
+    .tozihat {
+        display: block;
+        justify-content: center;
+        font-family: irs;
+    }
+
+    .tozihat p {
+        color: white;
+        font-family: irs;
+    }
+
+    .hello-to-people {
+        text-align: center;
+        font-family: irs;
+        font-size: xx-large;
+    }
+
+    .tozihat-koli {
+        color: white;
+        font-family: irs;
+        text-align: justify;
+    }
+
+    .my-artworks {
+        color: white;
+        font-family: irs;
+        text-align: justify;
+    }
+
+    .socialmedia {
+        color: white;
+        font-family: irs;
+        text-align: center;
+    }
+
+    .ig-logo {
+        width: 70px;
+
+    }
+
+    .tg-icon {
+        width: 80px;
+    }
+
+    #icon-socialmedias {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@keyframes spin {
+    0% {
+        border-color: white;
+    }
+
+    50% {
+        border-color: var(--color4);
+    }
+
+    70% {
+        border-color: var(--color5);
+    }
+
+    95% {
+        border-color: var(--color6);
+    }
+
+    100% {
+        border-color: var(--color2);
+    }
+}
+
+/* add  */
+@media (min-width:401px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--color3);
+        width: 2000px;
+        margin-left: -20px;
+        border-radius: 13px;
+        padding: 10px 20px;
+    }
+
+    li {
+        float: left;
+        text-align: center;
+        margin-left: 41px;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 214px;
+    }
+
+    li a:hover {
+        background-color: gray;
+        border-radius: 5px;
+    }
+
+    .hrefc {
+        color: var(--color5);
+    }
+
+    #painter .painter {
+        width: 339px;
+        margin-left: 493px;
+    }
+
+    .tozihat h1 {
+        color: white;
+        text-align: center;
+        stroke: black;
+        font-size: 52px;
+    }
+
+    .tozihat .hello-to-people {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+    }
+
+    .tozihat .tozihat-koli {
+        font-size: 30px;
+    }
+
+    .my-artworks {
+        font-size: 20px;
+    }
+
+    .socialmedia {
+        font-size: 20px;
+    }
+
+    #icon-socialmedias .ig-logo {
+        width: 100px;
+        transition: transform 2s;
+    }
+
+    #icon-socialmedias .tg-icon {
+        width: 100px;
+        transition: transform 2s;
+    }
+    .ig-logo:hover {
+        transform: scale(1.2);
+    }
+    .tg-icon:hover{
+        transform: scale(1.2);
+    }
+}

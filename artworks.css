@@ -1,0 +1,137 @@
+:root {
+    --color1: #1D1A39;
+    --color2: #451952;
+    --color3: #662549;
+    --color4: #AE445A;
+    --color5: #F39F5A;
+    --color6: #E8BCB9;
+}
+
+@font-face {
+    font-family: lale;
+    src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: bahman;
+    src: url(Bahman\ 1.ttf);
+}
+
+@font-face {
+    font-family: irs;
+    src: url(IRANSansWeb_Bold.ttf);
+}
+
+@font-face {
+    font-family: aviny;
+    src: url(aviny.ttf);
+}
+
+* {
+    font-family: irs;
+}
+
+body {
+    background: linear-gradient(90deg, #1D1A39, #451952) !important;
+}
+
+@media (min-width:300px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #ui {
+        margin-top: -7px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--color3);
+        width: 442px;
+        margin-left: -20px;
+        border-radius: 60px;
+    }
+
+    li {
+        float: left;
+        text-align: center;
+        margin-left: 41px;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: gray;
+        opacity: 0.5;
+    }
+
+    .hrefc {
+        color: var(--color5);
+    }
+
+    .card {
+        max-width: 300px;
+        margin: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        border-radius: 8px;
+        background-color: #ffffff;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card-description {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .card-footer {
+        background-color: #f8f9fa;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .card {
+        margin-left: 42px;
+        margin-top: -20px;
+    }
+
+    .card-footer .btn-primary {
+        background-color: blue;
+        color: white;
+        stroke: none;
+        border: none;
+        outline: none;
+        width: 138px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
